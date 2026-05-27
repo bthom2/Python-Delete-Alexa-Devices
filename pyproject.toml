@@ -1,0 +1,17 @@
+[project]
+name = "python-delete-alexa-devices"
+version = "0.1.0"
+description = "Manage and delete Alexa smart home devices through the Amazon Alexa API."
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+authors = [{ name = "Shereef" }]
+dependencies = [
+	"requests==2.31.0",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"

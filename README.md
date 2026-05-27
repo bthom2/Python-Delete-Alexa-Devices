@@ -12,8 +12,7 @@ I do not know **anything** about how the Alexa API works. I just reverse enginee
 
 The script is written in Python 3.11 and requires the following packages:
 - requests  
-_see requirements.txt for more details_   
-Run `pip install -r requirements.txt` to install required packages
+Managed with Poetry. Install the dependency with `poetry install` and run the script with `poetry run python main.py`.
 
 To get the needed HTTP headers and cookie information, you will need to download some kind of HTTP traffic sniffer.  
 
@@ -48,6 +47,12 @@ You also need to have a valid Amazon account and access to the account you want 
 16. Update the `HOST` to match the host your Alexa App is making requests to
     - e.g. `eu-api-alexa.amazon.co.uk` 
 18. You can now try and run the script. If it works, you should see a list of all devices connected to the account you are logged in with. If you get an error, see the [Troubleshooting](#troubleshooting) section for more information.
+
+### Poetry setup
+
+1. Install Poetry if it is not already available on your system.
+2. From the project root, run `poetry install`.
+3. Run the script with `poetry run python main.py`.
 
 ## Troubleshooting
 
